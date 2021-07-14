@@ -114,6 +114,31 @@ class Tickets(commands.Cog, name="Tickets"):
 
             else:
                 await ctx.send('This command can only be used in the registration channel!')
+                
+    @commands.command(aliases=['ticket'])
+    async def tickets(self, ctx):
+        """Explains the entire ticket system
+        """
+        embed = discord.Embed(title="How to create a ticket?",
+                            color=0x8368ff)
+        embed.add_field(name="Go to #🎟-tickets-🎟",
+                        value="#🎟-tickets-🎟 is located in the noticeboard category",
+                        inline=False)
+        embed.add_field(name="Tickets can be created for the following reasons",
+                        value="> Discord Nick/Role Change\n"
+                            "> Do not kick list\n"
+                            "> Problems/Queries/Complaint/Suggestion\n"
+                            "> Reporting a player\n"
+                            "> Milestone\n"
+                            "> Staff Application\n"
+                            "> Event\n"
+                            "> Other",
+                        inline=False)
+        embed.add_field(name="Click the button under the message sent by @TicketTool",
+                        value="The following image shows you what you need to click.",
+                        inline=False)
+        embed.set_image(url=f"https://media.discordapp.net/attachments/420572640172834816/864894505509847070/unknown.png?width=1229&height=670")
+        await ctx.send(embed=embed)
 
     @commands.command(aliases=['del'])
     async def delete(self, ctx):
