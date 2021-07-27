@@ -1,6 +1,4 @@
 @$$
-admn
-admin
 assMonkey
 assface
 biatch
@@ -61,8 +59,6 @@ shyte
 shytty
 skanky
 slutty
-staff
-staf
 ahole
 amcik
 andskota
@@ -285,7 +281,6 @@ nigur
 niiger
 niigr
 nutsack
-oficer
 orafis
 orgasim
 orgasm
