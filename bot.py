@@ -668,8 +668,8 @@ async def on_guild_channel_create(channel):
                                         "The tag may not include special characters unless it's the tag of an ally guild.")
                                 elif len(tag) > 6:
                                     await channel.send("The tag may not be longer than 6 characters.")
-                                elif tag.lower() in badwords.split('\n'):
-                                    await channel.send("The tag may not include profane language")
+                                elif tag.lower() in badwords.split('\n') or tag=='oficer' or tag=='admn' or tag=='admin' or tag=='staf' or tag=='staff':
+                                    await channel.send("The tag may not include profane language or staff ranks!")
                                 else:
                                     new_nick = ign + f' [{tag}]'
                                     await author.edit(nick=new_nick)
